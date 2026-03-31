@@ -300,7 +300,7 @@ function ContactContent({ closeModal }: { closeModal: () => void }) {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     const phone = "554288299398";
-    const message = `Olá Sirlei! Gostaria de entrar em contato.\n\n*Nome:* ${name}\n*Idade:* ${age}\n*Motivo do contato:* ${reason}`;
+    const message = `Olá Sirlei, vim direto do seu link na bio, e gostaria de saber mais, me chamo ${name}, minha idade é ${age}, e o motivo é ${reason}`;
     const encodedMessage = encodeURIComponent(message);
     window.open(`https://wa.me/${phone}?text=${encodedMessage}`, '_blank');
     closeModal();
